@@ -164,6 +164,130 @@ footer{
       color: white;
   }
 
+    #hamburger-icon  {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+
+  }
+
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+
+  .open .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(167,166,157,0.9); /* Or any color you prefer */
+      width: 50%;
+      position: absolute;
+      top: 60px; /* Adjust based on the size of your header */
+      left: 0;
+      height: 250px;
+      text-decoration: none;
+      font-size: 20px;
+      margin-left: 200px;
+      border-radius: 25px;
+  }
+  
+  
+
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .mobile-menu li {
+    text-decoration: none;
+    list-style: none;
+
+  }
+
+  .mobile-menu li a{
+    color: aliceblue;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-weight: 100;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    
+    .navbar {
+  display: none;
+
+   }
+
+.header {
+  padding: 10px 50px;
+}
+  
+
+
+  #hamburger-icon {
+  display: block;
+  }
+    .logo {
+      margin-right: 200px;
+    }
+    
+    
+    .Text {
+    margin: 50px;
+    padding: 0;
+}
+
+.Text p {
+    color: aliceblue;
+    font-size: 15px;
+    margin-right: 35px;
+
+
+}
+
+.Text img {
+    float: left;
+    margin-right: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.footercontainer {
+        padding: 30px; /* Adjust padding for the footer container on smaller screens */
+    }
+
+
+  }    
+
     </style>
 </head>
 <body>
@@ -175,6 +299,18 @@ footer{
             <a href="About.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
+<div id="hamburger-icon"  onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="programes.html">Programes</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+          </div>
+        
     </header>
 <br>
     <div class="Text">
@@ -265,6 +401,19 @@ footer{
             <p>Copyright &copy;2023  Designed by Mashudu W Mulaudzi</p>
         </div>
     </footer>
+
+    <script>
+      function toggleMobileMenu(menu) {
+  menu.classList.toggle('open'); // Fix this line
+  var mobileMenu = document.querySelector('.mobile-menu');
+  if(menu.classList.contains('open')){
+      mobileMenu.style.display = 'flex'; // Ensure the mobile menu is displayed when the hamburger icon is clicked
+  } else {
+      mobileMenu.style.display = 'none'; // Hide the mobile menu when the hamburger icon is clicked again
+  }
+}
+
+  </script>
 
 </body>
 </html>
