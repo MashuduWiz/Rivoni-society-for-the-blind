@@ -1,128 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="lY7nHW9WJz-OTxDJJMa5I1oj_ElQreElM2xSjpViVqc" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rivoni Home Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rivoni Society for the Blind</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">Rivoni</a>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="programes.html">Programes</a>
-            <a href="About.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
 
-        <div id="hamburger-icon"  onclick="toggleMobileMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <ul class="mobile-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="programes.html">Programes</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        </div>
-    </header>
-<br>
-    <div class="Intro">
-      <h1>Welcome to <i>Rivoni</i></h1><h3>Society for the blind</h3><P>"beyond the power of eyes"</P>
+<!-- ═══ NAV ═══ -->
+<nav>
+  <div class="nav-logo">
+    <img class="nav-logo-img" src="Pictures/rivoni_nav_logo.png" alt="Rivoni Society for the Blind Logo">
+    <div class="nav-logo-text">
+      <strong>RIVONI</strong>
+      <span>Society for the Blind</span>
     </div>
-    <br>
-    <div class="img">
-     <img src="Pictures/IMG-20231024-WA0009.jpg" alt="Rivoni"   width="700px"  height="500px" class="Pic1"> 
-     <img src="Pictures/IMG-20231024-WA0008.jpg" alt="Rivoni"   width="650px"  height="500px" class="Pic2">
+  </div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#programs">Programs</a></li>
+    <li><a href="#impact">Our Impact</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Support Us</a></li>
+  </ul>
+  <a href="#contact" class="btn-donate-nav"><i class="fas fa-envelope"></i> Contact Us</a>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#programs">Programs</a>
+  <a href="#impact">Our Impact</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Support Us</a>
+  <a href="#contact" class="btn-donate-nav"><i class="fas fa-envelope"></i> Contact Us</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <div class="hero-tag">Welcome to Rivoni Society for the Blind</div>
+    <h1 class="fade-up">Beyond the power<br>Of <em>Eyes</em></h1>
+    <p class="fade-up delay-1">Rivoni Society for the Blind is dedicated to the rehabilitation, education and empowerment of visually impaired children and adults in Limpopo.</p>
+    <div class="hero-btns fade-up delay-2">
+      <a href="#contact" class="btn-primary"><i class="fas fa-envelope"></i> Contact Us</a>
+      <a href="#about"   class="btn-outline"><i class="fas fa-play"></i> Learn More</a>
     </div>
-    <br>
-
-    <div class="Para">
-       <P>
-        Rivoni society for the blind  is a school that empowers and reaches visually impaired people, as well as basic services to the community.The services of rivoni are
-        available to all children and adults,when identified they are able to undergo an intersive orintation and Mobility training.If you know anyone that is suffering of a disease
-        called Trachoma  a highly contagious disease which results to blindness they can get proffesional help in our school. 
-
-       </P>
-       
+    <div class="hero-avatars fade-up delay-3">
+      <div class="avatar-stack">
+        <div class="avatar-placeholder">+</div>
+        <div class="avatar-placeholder">♥</div>
+        <div class="avatar-placeholder">★</div>
+        <div class="avatar-placeholder">✓</div>
+      </div>
+      <p><strong>40+ Years</strong> of changing lives</p>
     </div>
-
-    <br>
-
-    <div class="program">
-       
-    <div class="head">Training programme: </div>
-
-
-        <div class="info">Rivoni offers vocational and development to visually impaired people,
-            as well as basic services to children and adults. Prospective students can choose from different that are:
-        </div>
-    
-     <div class="rehab">
-        <h3> Rehabilitation programme:</h3><br>
-        The program is considered to be the fondation on which all other programmes are built:
-        <br>
-          1. Orientation and Mobility<br>
-          
-          2.Activities of daily living<br>
-          3.Mainstreram<br>
-           -Placement<br>
-           -ABET<br>
-           -inclusive school<br>
-           4.Eyecare Awareness <br>
-           <a href="programes.html" class="btn">Read more</a>
-          <br>
-          <br>
-          <br>
-          <br>
-     </div>
-
+  </div>
+  <div class="hero-image fade-up delay-2">
+    <div class="hero-image-placeholder">
+      <img src="Pictures/IMG-20231024-WA0009.jpg" alt="Hero Image">
     </div>
+    <div class="mission-card">
+      <div class="mission-card-icon"><i class="fas fa-bullseye"></i></div>
+      <h4>Our Mission</h4>
+      <p>To empower the visually impaired through holistic rehabilitation, education, and community support.</p>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <div class="Footercontainer">
-            <div class="socials">
-            <a href="https://www.facebook.com/profile.php?id=61551617265017"><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://youtube.com/@TLight6?si=6zEJO-VWB__sFFfT"><i class="fa-brands fa-youtube"></i></a>
-            </div>
+<!-- ═══ ABOUT ═══ -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-image">
+      <div class="about-image-frame">
+        <img src="Pictures/IMG-20231024-WA0008.jpg" alt="About Image">
+      </div>
+      <div class="about-deco"></div>
+    </div>
+    <div class="about-text">
+      <p class="section-label">About Us</p>
+      <h2 class="section-title">A Legacy of Care and<br>Empowerment Since 1976</h2>
+      <br>
+      <h2>1.Background</h2>
+      <p>Rivoni Society for the blind was founded in 1975 at Elim Hospital in the area of Louis Trichard (Makhado).
+        As an intiator, Erica Sutter soon realized the need for urgent measures to prevent Trachoma,a Highly contagious eye disease
+        resulting in eventual blindness..</p>
+        <h2>2.Overview</h2>
+        <p>Rivoni, a Xitsonga word meaning light, was established for the main reason of providing light to people with visually
+            impairment,with its main mandate being to remove the darkness and put light to people who are blind.
+            Society for the blind, The majority of south africa's visually disabled people live in rural areas.
+            Their visual impairment is partly due to the endemic nature of the diseases Glaucoma and Trachoma, and other 
+            poverty related conditions. Conversely oppotunities for rehabilitation, training and employment, and the access 
+            to special services are generally minimal or non-exiatent in rural areas. Back in 1975 this situation of hopeless 
+            existed for an estimated time 6% (251 000) of the citizens of Limpopo Province.</p>
+      <div class="about-pillars">
+        <div class="pillar"><i class="fas fa-hands-helping"></i><p>Rehabilitation<br>Programs</p></div>
+        <div class="pillar"><i class="fas fa-users"></i><p>Community<br>Support</p></div>
+        <div class="pillar"><i class="fas fa-tools"></i><p>Skills<br>Development</p></div>
+        <div class="pillar"><i class="fas fa-graduation-cap"></i><p>Inclusive<br>Education</p></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <div class="footernav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="programes.html">programes</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-            </div>
+<!-- ═══ PROGRAMS ═══ -->
+<section class="programs" id="programs">
+  <div class="programs-inner">
+    <div class="programs-left">
+      <p class="section-label">Our Programs</p>
+      <h2 class="section-title">Comprehensive Services<br>for a Better Tomorrow</h2>
+      <p>We offer a wide range of rehabilitation and support services tailored to the needs of visually impaired children and adults.</p>
+      <a href="#contact" class="btn-primary" style="width:fit-content">View All Programs <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="programs-grid">
+      <div class="program-card">
+        <div class="program-icon"><i class="fas fa-walking"></i></div>
+        <h4>Orientation &amp; Mobility</h4>
+        <p>Training individuals to travel safely and independently in their environment.</p>
+      </div>
+      <div class="program-card">
+        <div class="program-icon"><i class="fas fa-braille"></i></div>
+        <h4>Braille Education</h4>
+        <p>Teaching Braille literacy for education and empowerment of learners.</p>
+      </div>
+      <div class="program-card">
+        <div class="program-icon"><i class="fas fa-briefcase"></i></div>
+        <h4>Vocational Training</h4>
+        <p>Providing skills for independent living and employment opportunities.</p>
+      </div>
+      <div class="program-card">
+        <div class="program-icon"><i class="fas fa-eye"></i></div>
+        <h4>Eye Care Awareness</h4>
+        <p>Promoting eye health and prevention in our community.</p>
+      </div>
+      <div class="program-card">
+        <div class="program-icon"><i class="fas fa-book-open"></i></div>
+        <h4>Inclusive Schooling</h4>
+        <p>Supporting inclusive education for visually impaired learners.</p>
+      </div>
+      <div class="program-card">
+        <div class="program-icon"><i class="fas fa-home"></i></div>
+        <h4>Daily Living Skills</h4>
+        <p>Helping individuals develop essential life skills for independence.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- ═══ IMPACT ═══ -->
+<section class="impact" id="impact">
+  <h2>Our Impact in Numbers</h2>
+  <div class="impact-grid">
+    <div class="impact-stat">
+      <i class="fas fa-calendar-alt"></i>
+      <b class="number" data-count="40">0</b>+
+      <span>Years of Service</span>
+    </div>
+    <div class="impact-stat">
+      <i class="fas fa-users"></i>
+      <b class="number" data-count="100">0</b>+
+      <span>Learners Supported</span>
+    </div>
+    <div class="impact-stat">
+      <i class="fas fa-handshake"></i>
+      <b class="number" data-count="6">0</b>
+      <span>Community Programs</span>
+    </div>
+    <div class="impact-stat">
+      <i class="fas fa-heart"></i>
+      <span style="font-family:var(--font-display);font-size:clamp(2rem,3vw,3rem);color:white;display:block;font-weight:800;">Countless</span>
+      <span>Lives Transformed</span>
+    </div>
+  </div>
+</section>
 
-        </div>
-        <div class="bottom">
-            <p>Inspred by- Marketing strategist: Tshedza khorombi</p><br>
-            <p>Copyright &copy;2023  Designed by Mashudu W Mulaudzi</p>
-        </div>
-    </footer>
+<!-- ═══ GALLERY ═══ -->
+<section class="gallery" id="gallery">
+  <h2>Moments of Hope</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item" style="background:linear-gradient(135deg,#b8c4dc,#7a93c4)"><i class="fas fa-image"></i></div>
+    <div class="gallery-item" style="background:linear-gradient(135deg,#c4a87a,#d4a853)"><i class="fas fa-image"></i></div>
+    <div class="gallery-item" style="background:linear-gradient(135deg,#7ab8a0,#4a9a7a)"><i class="fas fa-image"></i></div>
+    <div class="gallery-item" style="background:linear-gradient(135deg,#b87a7a,#c45a5a)"><i class="fas fa-image"></i></div>
+    <div class="gallery-item" style="background:linear-gradient(135deg,#9a7ab8,#7a5ab8)"><i class="fas fa-image"></i></div>
+  </div>
+  <div class="gallery-cta">
+    <a href="#" class="btn-dark">View Full Gallery <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
 
-    <script>
-        function toggleMobileMenu(menu) {
-    menu.classList.toggle('open'); // Fix this line
-    var mobileMenu = document.querySelector('.mobile-menu');
-    if(menu.classList.contains('open')){
-        mobileMenu.style.display = 'flex'; // Ensure the mobile menu is displayed when the hamburger icon is clicked
+<!-- ═══ CTA BANNER ═══ -->
+<div class="cta-banner">
+  <div class="cta-icon-wrap"><i class="fas fa-heart"></i></div>
+  <div>
+    <div class="cta-text">
+      <h3>You Can Make a Difference</h3>
+      <p>Your support helps us continue our mission of empowering visually impaired individuals to live with dignity and independence.</p>
+    </div>
+    <div class="cta-actions">
+      <div class="cta-action">
+        <div class="cta-action-icon"><i class="fas fa-donate"></i></div>
+        <span>Donate</span>
+      </div>
+      <div class="cta-action">
+        <div class="cta-action-icon"><i class="fas fa-user-graduate"></i></div>
+        <span>Sponsor a Learner</span>
+      </div>
+      <div class="cta-action">
+        <div class="cta-action-icon"><i class="fas fa-hands-helping"></i></div>
+        <span>Volunteer</span>
+      </div>
+      <div class="cta-action">
+        <div class="cta-action-icon"><i class="fas fa-handshake"></i></div>
+        <span>Partner With Us</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ CONTACT ═══ -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <div class="contact-item"><i class="fas fa-phone"></i><p>015 291 4049</p></div>
+      <div class="contact-item"><i class="fas fa-envelope"></i><p>info@rivoni.co.za</p></div>
+      <div class="contact-item"><i class="fas fa-map-marker-alt"></i><p>P.O. Box 1011, Thohoyandou,<br>0950, Limpopo, South Africa</p></div>
+      <div class="socials">
+        <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="social-icon" href="#"><i class="fab fa-whatsapp"></i></a>
+        <a class="social-icon" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <h3>Send a Message</h3>
+      <div class="form-row">
+        <div class="form-group"><input type="text"  placeholder="Your Name"/></div>
+        <div class="form-group"><input type="email" placeholder="Email Address"/></div>
+      </div>
+      <div class="form-group"><textarea placeholder="Your Message"></textarea></div>
+      <button class="btn-submit">Send Message</button>
+    </div>
+    <div>
+      <p class="location-title">Our Location</p>
+      <div class="map-placeholder">
+        <i class="fas fa-map"></i>
+        <div class="map-label"><i class="fas fa-map-marker-alt"></i>Rivoni Society for the Blind</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>© 2025 Rivoni Society for the Blind. All Rights Reserved.</p>
+</footer>
+
+<script>
+  // ── Mobile nav toggle ──
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('open');
+    const spans = hamburger.querySelectorAll('span');
+    if (mobileNav.classList.contains('open')) {
+      spans[0].style.transform = 'rotate(45deg) translate(5px,5px)';
+      spans[1].style.opacity   = '0';
+      spans[2].style.transform = 'rotate(-45deg) translate(5px,-5px)';
     } else {
-        mobileMenu.style.display = 'none'; // Hide the mobile menu when the hamburger icon is clicked again
+      spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
     }
-  }
+  });
 
-    </script>
+  // Close nav on link click
+  mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+    hamburger.querySelectorAll('span').forEach(s => { s.style.transform=''; s.style.opacity=''; });
+  }));
+
+  // ── Scroll-trigger animations ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'none';
+        e.target.style.transition = 'opacity .7s ease, transform .7s ease';
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.program-card, .pillar, .about-pillar, .impact-stat, .gallery-item, .cta-action').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(24px)';
+    observer.observe(el);
+  });
+
+  // ── Counter animation ──
+  const counters = document.querySelectorAll('.number[data-count]');
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const el = e.target;
+        const target = +el.dataset.count;
+        let current = 0;
+        const step = Math.ceil(target / 40);
+        const timer = setInterval(() => {
+          current = Math.min(current + step, target);
+          el.textContent = current;
+          if (current >= target) clearInterval(timer);
+        }, 40);
+        counterObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(c => counterObserver.observe(c));
+
+  // ── Smooth active nav highlighting ──
+  const sections = document.querySelectorAll('section[id], .cta-banner');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 120) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current ? 'var(--gold)' : '';
+    });
+  });
+
+  // ── Form submit ──
+  document.querySelector('.btn-submit').addEventListener('click', function () {
+    const inputs = document.querySelectorAll('.contact-form input, .contact-form textarea');
+    let valid = true;
+    inputs.forEach(i => {
+      if (!i.value.trim()) { i.style.borderColor = '#e05'; valid = false; }
+      else i.style.borderColor = '';
+    });
+    if (valid) {
+      this.textContent = '✓ Message Sent!';
+      this.style.background = '#2e7d32';
+      inputs.forEach(i => i.value = '');
+      setTimeout(() => { this.textContent = 'Send Message'; this.style.background = ''; }, 3000);
+    }
+  });
+</script>
 </body>
 </html>
