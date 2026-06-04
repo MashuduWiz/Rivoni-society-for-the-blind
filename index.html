@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
   <title>Rivoni Society for the Blind</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
@@ -146,7 +146,6 @@
         Practitioners,also train the visually impaired people in their own respective home and community.The department provides 
         training to visually impaired people categorized as totally blind and partially blind,inclusive of independence training.
 </p>
-      <a href="#contact" class="btn-primary" style="width:fit-content">View All Programs <i class="fas fa-arrow-right"></i></a>
     </div>
     <div class="programs-grid">
       <div class="program-card">
@@ -188,7 +187,7 @@
         <div class="program-icon"><i class="fas fa-briefcase"></i></div>
         <h4>Mainstream Education</h4>
         <div class="program-card-body">
-          <p class="program-teaser">Placement back into work, ABET levels 1–4, and inclusive schooling from Grade R to 12.</p>
+          <p class="program-teaser">Placement back into work and training in ABET levels 1–4</p>
           <div class="read-more-extra program-extra" id="programEducation" hidden>
             <p><strong>Placement</strong><br>
               Those enrolled in the Mainstream Programme were often employed before losing their sight and had to leave their jobs.
@@ -197,9 +196,7 @@
             <p><strong>ABET</strong><br>
               Visually impaired people are taught at levels 1, 2, 3, and 4. They learn Braille, typing, and elementary Braille examination.
               On completion, some are placed in tertiary institutions while others secure employment.</p>
-            <p><strong>Inclusive school</strong><br>
-              The school caters to both blind and sighted learners aged 4–21 in Grades R–12.</p>
-            <p class="program-extra-label">Other school activities:</p>
+            <p class="program-extra-label">Other society activities:</p>
             <ul>
               <li>Recreation</li>
               <li>Sport</li>
@@ -256,17 +253,30 @@
 <!-- ═══ GALLERY ═══ -->
 <section class="gallery" id="gallery">
   <h2>Moments of Hope</h2>
-  <div class="gallery-grid">
-    <div class="gallery-item" style="background:linear-gradient(135deg,#b8c4dc,#7a93c4)"><i class="fas fa-image"></i></div>
-    <div class="gallery-item" style="background:linear-gradient(135deg,#c4a87a,#d4a853)"><i class="fas fa-image"></i></div>
-    <div class="gallery-item" style="background:linear-gradient(135deg,#7ab8a0,#4a9a7a)"><i class="fas fa-image"></i></div>
-    <div class="gallery-item" style="background:linear-gradient(135deg,#b87a7a,#c45a5a)"><i class="fas fa-image"></i></div>
-    <div class="gallery-item" style="background:linear-gradient(135deg,#9a7ab8,#7a5ab8)"><i class="fas fa-image"></i></div>
+  <div class="gallery-grid" id="galleryGrid">
+    <div class="gallery-item" style="background-image:url('Pictures/20230822_173835.jpg');background-size:cover;background-position:center"></div>
+    <div class="gallery-item" style="background-image:url('Pictures/Screenshot 2026-06-04 172124.png');background-size:cover;background-position:center"></div>
+    <div class="gallery-item" style="background-image:url('Pictures/Screenshot 2026-06-04 172210.png');background-size:cover;background-position:center"></div>
+    <div class="gallery-item" style="background-image:url('Pictures/Screenshot 2026-06-04 172232.png');background-size:cover;background-position:center"></div>
+    <div class="gallery-item" style="background-image:url('Pictures/Screenshot 2026-06-04 172318.png');background-size:cover;background-position:center"></div>
+    <!-- Add more photos below: copy a line and use class gallery-item--extra -->
+    <div class="gallery-item gallery-item--extra" style="background-image:url('Pictures/Screenshot 2026-06-04 172400.png');background-size:cover;background-position:center"></div>
+    <div class="gallery-item gallery-item--extra" style="background-image:url('Pictures/20230324_114837.jpg');background-size:cover;background-position:center"></div>
+    <div class="gallery-item gallery-item--extra" style="background-image:url('Pictures/Screenshot 2026-06-04 203329.png');background-size:cover;background-position:center"></div>
+    <div class="gallery-item gallery-item--extra" style="background-image:url('Pictures/Screenshot 2026-06-04 203344.png');background-size:cover;background-position:center"></div>
+    <div class="gallery-item gallery-item--extra" style="background-image:url('Pictures/Adult and young.png');background-size:cover;background-position:center"></div>
   </div>
-  <div class="gallery-cta">
-    <a href="#" class="btn-dark">View Full Gallery <i class="fas fa-arrow-right"></i></a>
+  <div class="gallery-cta" id="galleryCta" hidden>
+    <button type="button" class="btn-dark" id="galleryToggle" aria-expanded="false" aria-controls="galleryGrid">
+      View Full Gallery <i class="fas fa-arrow-right" aria-hidden="true"></i>
+    </button>
   </div>
 </section>
+
+<div class="gallery-lightbox" id="galleryLightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Full size image">
+  <button type="button" class="gallery-lightbox-close" id="galleryLightboxClose" aria-label="Close image">&times;</button>
+  <img class="gallery-lightbox-img" id="galleryLightboxImg" alt="">
+</div>
 
 <!-- ═══ CONTACT ═══ -->
 <section class="contact" id="contact">
@@ -278,7 +288,7 @@
       <div class="contact-item"><i class="fas fa-map-marker-alt"></i><p>PRIVARE BAG X344 ELIM HOSPITAL,<br>0960, Limpopo, South Africa</p></div>
       <div class="socials">
         <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
-        <a class="social-icon" href="#"><i class="fab fa-whatsapp"></i></a>
+        <a class="social-icon" href="https://wa.me/27761944124" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
         <a class="social-icon" href="#"><i class="fab fa-instagram"></i></a>
         <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
       </div>
@@ -317,10 +327,17 @@
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
-  <p>© 2025 Rivoni Society for the Blind. All Rights Reserved.</p>
+  <p>© 2026 Rivoni Society for the Blind. All Rights Reserved.</p>
 </footer>
 
 <script>
+  function setPageScrollLock() {
+    const navOpen = document.getElementById('mobileNav')?.classList.contains('open');
+    const lb = document.getElementById('galleryLightbox');
+    const lightboxOpen = lb && !lb.hidden;
+    document.body.style.overflow = (navOpen || lightboxOpen) ? 'hidden' : '';
+  }
+
   // ── Mobile nav toggle ──
   const hamburger = document.getElementById('hamburger');
   const mobileNav = document.getElementById('mobileNav');
@@ -334,12 +351,14 @@
     } else {
       spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
     }
+    setPageScrollLock();
   });
 
   // Close nav on link click
   mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
     mobileNav.classList.remove('open');
     hamburger.querySelectorAll('span').forEach(s => { s.style.transform=''; s.style.opacity=''; });
+    setPageScrollLock();
   }));
 
   // ── Scroll-trigger animations ──
@@ -354,7 +373,7 @@
     });
   }, { threshold: 0.15 });
 
-  document.querySelectorAll('.program-card, .pillar, .about-pillar, .impact-stat, .gallery-item').forEach(el => {
+  document.querySelectorAll('.program-card, .pillar, .about-pillar, .impact-stat, .gallery-item:not(.gallery-item--extra)').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(24px)';
     observer.observe(el);
@@ -391,6 +410,86 @@
     navLinks.forEach(a => {
       a.style.color = a.getAttribute('href') === '#' + current ? 'var(--gold)' : '';
     });
+  });
+
+  // ── Gallery show more / less ──
+  const galleryGrid = document.getElementById('galleryGrid');
+  const galleryCta = document.getElementById('galleryCta');
+  const galleryToggle = document.getElementById('galleryToggle');
+  const galleryExtras = galleryGrid?.querySelectorAll('.gallery-item--extra') ?? [];
+
+  if (galleryExtras.length && galleryCta && galleryToggle && galleryGrid) {
+    galleryCta.hidden = false;
+    galleryToggle.addEventListener('click', () => {
+      const expanded = galleryGrid.classList.toggle('is-expanded');
+      galleryToggle.setAttribute('aria-expanded', String(expanded));
+      galleryToggle.innerHTML = expanded
+        ? 'Show Less <i class="fas fa-arrow-right" aria-hidden="true"></i>'
+        : 'View Full Gallery <i class="fas fa-arrow-right" aria-hidden="true"></i>';
+      if (expanded) {
+        galleryExtras.forEach(el => {
+          el.style.opacity = '0';
+          el.style.transform = 'translateY(24px)';
+          observer.observe(el);
+        });
+      }
+    });
+  }
+
+  // ── Gallery lightbox ──
+  const galleryLightbox = document.getElementById('galleryLightbox');
+  const galleryLightboxImg = document.getElementById('galleryLightboxImg');
+  const galleryLightboxClose = document.getElementById('galleryLightboxClose');
+
+  if (galleryLightbox) {
+    galleryLightbox.hidden = true;
+    galleryLightbox.setAttribute('aria-hidden', 'true');
+    setPageScrollLock();
+  }
+
+  function getGalleryImageUrl(item) {
+    const match = getComputedStyle(item).backgroundImage.match(/url\(["']?(.+?)["']?\)/);
+    return match ? match[1].replace(/\\/g, '') : '';
+  }
+
+  function openGalleryLightbox(src) {
+    if (!galleryLightbox || !galleryLightboxImg || !src) return;
+    galleryLightboxImg.src = src;
+    galleryLightboxImg.alt = 'Rivoni Society gallery photo';
+    galleryLightbox.hidden = false;
+    galleryLightbox.setAttribute('aria-hidden', 'false');
+    setPageScrollLock();
+    galleryLightboxClose?.focus();
+  }
+
+  function closeGalleryLightbox() {
+    if (!galleryLightbox || !galleryLightboxImg) return;
+    galleryLightbox.hidden = true;
+    galleryLightbox.setAttribute('aria-hidden', 'true');
+    galleryLightboxImg.removeAttribute('src');
+    setPageScrollLock();
+  }
+
+  galleryGrid?.querySelectorAll('.gallery-item').forEach(item => {
+    item.setAttribute('role', 'button');
+    item.setAttribute('tabindex', '0');
+    item.setAttribute('aria-label', 'View full size image');
+    const open = () => openGalleryLightbox(getGalleryImageUrl(item));
+    item.addEventListener('click', open);
+    item.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        open();
+      }
+    });
+  });
+
+  galleryLightboxClose?.addEventListener('click', closeGalleryLightbox);
+  galleryLightbox?.addEventListener('click', e => {
+    if (e.target === galleryLightbox) closeGalleryLightbox();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && galleryLightbox && !galleryLightbox.hidden) closeGalleryLightbox();
   });
 
   // ── Read more / less ──
