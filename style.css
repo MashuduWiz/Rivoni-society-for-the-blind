@@ -763,8 +763,17 @@ footer {
   .about-pillars { grid-template-columns: 1fr; }
   .impact-grid { grid-template-columns: 1fr; gap: 24px; }
   .impact-stat .number { font-size: clamp(1.75rem, 8vw, 2.5rem); }
-  .section-title br { display: none; }
-  .hero-text h1 br { display: none; }
+  .section-title br,
+  .hero-text h1 br {
+    display: inline;
+    line-height: 0;
+  }
+  .section-title br::before,
+  .hero-text h1 br::before {
+    content: '\00a0';
+    white-space: pre;
+    line-height: inherit;
+  }
   .cta-actions { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px 16px; }
   .cta-text h3 { font-size: 1.35rem; }
   footer { font-size: .75rem; padding: 18px 16px; }
